@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Space Tourism</title>
+  </head>
+  <body class="home" style="visibility: hidden">
+    <header class="primary-header">
+      <div class="flex-container flex">
+        <!-- Logo -->
+        <img src="assets/shared/logo.svg" alt="" class="logo" />
+        <!-- Menu -->
+        <nav>
+          <ul class="underline-indicators">
+            <li class="active">
+              <a href="/index.html" class="nav-text"><span>00</span>Home</a>
+            </li>
+            <li>
+              <a href="/destinations.html" class="nav-text"
+                ><span>01</span>Destination</a
+              >
+            </li>
+            <li>
+              <a href="/crew.html" class="nav-text"><span>02</span>crew</a>
+            </li>
+            <li>
+              <a href="/technology.html" class="nav-text"
+                ><span>03</span>technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Hamburger Icon-->
+        <div class="hamburger-menu" id="open">
+          <img src="assets/shared/icon-hamburger.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <!-- Close Button -->
+        <div class="close-icon" id="close">
+          <img src="assets/shared/icon-close.svg" alt="close-button" />
+        </div>
+        <!-- Nav -->
+        <nav>
+          <ul class="">
+            <li class="active">
+              <a href="" class="nav-text"><span>00</span>Home</a>
+            </li>
+            <li>
+              <a href="" class="nav-text"><span>01</span>Destination</a>
+            </li>
+            <li>
+              <a href="" class="nav-text"><span>02</span>crew</a>
+            </li>
+            <li>
+              <a href="" class="nav-text"><span>03</span>technology</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Grid Container -->
+      <div class="grid-container grid-container--home">
+        <!-- Content -->
+        <div>
+          <h1
+            class="uppercase text-light fs-500 ff-barlow-cond letter-spacing-3"
+          >
+            so, you want to travel to
+            <span class="fs-900 uppercase letter ff-bellefair text-white"
+              >space</span
+            >
+          </h1>
+          <div class="body-text">
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </div>
+        </div>
+        <!-- Explore Button -->
+        <div class="btn-lg uppercase"><p>explore</p></div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Space Tourism</title>
+  </head>
+  <body class="destinations" style="visibility: hidden">
+    <header class="primary-header">
+      <div class="flex-container flex">
+        <!-- Logo -->
+        <img src="assets/shared/logo.svg" alt="" class="logo" />
+        <!-- Menu -->
+        <nav>
+          <ul class="underline-indicators">
+            <li>
+              <a href="/index.html" class="nav-text"><span>00</span>Home</a>
+            </li>
+            <li class="active">
+              <a href="/destinations.html" class="nav-text"
+                ><span>01</span>Destination</a
+              >
+            </li>
+            <li>
+              <a href="/crew.html" class="nav-text"><span>02</span>crew</a>
+            </li>
+            <li>
+              <a href="/technology.html" class="nav-text"
+                ><span>03</span>technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Hamburger Icon-->
+        <div class="hamburger-menu" id="open">
+          <img src="assets/shared/icon-hamburger.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <!-- Close Button -->
+        <div class="close-icon" id="close">
+          <img src="assets/shared/icon-close.svg" alt="close-button" />
+        </div>
+        <!-- Nav -->
+        <nav>
+          <ul class="">
+            <li>
+              <a href="" class="nav-text"><span>00</span>Home</a>
+            </li>
+            <li class="active">
+              <a href="" class="nav-text"><span>01</span>Destination</a>
+            </li>
+            <li>
+              <a href="" class="nav-text"><span>02</span>crew</a>
+            </li>
+            <li>
+              <a href="" class="nav-text"><span>03</span>technology</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Grid Container -->
+      <div class="grid-container grid-container--destination" tabindex="0">
+        <!-- Title -->
+        <div class="numbered-title"><span>01</span>Pick your destination</div>
+        <!-- Image -->
+        <img
+          src="assets/destination/image-moon.png"
+          id="moon-image"
+          alt="moon"
+        />
+        <img
+          src="assets/destination/image-mars.png"
+          id="mars-image"
+          alt="mars"
+          hidden
+        />
+        <img
+          src="assets/destination/image-europa.png"
+          id="europa-image"
+          alt="europa"
+          hidden
+        />
+        <img
+          src="assets/destination/image-titan.png"
+          id="titan-image"
+          alt="titan"
+          hidden
+        />
+
+        <!-- Content Moon -->
+        <div class="destination-content">
+          <div class="tabs flex underline-indicators" role="tablist">
+            <div
+              class="nav-text active"
+              role="tab"
+              aria-controls="moon-tab"
+              data-img="moon-image"
+            >
+              Moon
+            </div>
+            <div
+              class="nav-text"
+              role="tab"
+              aria-controls="mars-tab"
+              data-img="mars-image"
+            >
+              Mars
+            </div>
+            <div
+              class="nav-text"
+              role="tab"
+              aria-controls="europa-tab"
+              data-img="europa-image"
+            >
+              Europa
+            </div>
+            <div
+              class="nav-text"
+              role="tab"
+              aria-controls="titan-tab"
+              data-img="titan-image"
+            >
+              Titan
+            </div>
+          </div>
+
+          <!-- The moon -->
+          <div id="moon-tab" tabindex="0" role="tabpanel">
+            <h2 class="uppercase fs-800 ff-bellefair">Moon</h2>
+            <div class="body-text">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </div>
+            <div class="divider-destination"></div>
+            <div class="destination-info">
+              <div>
+                <div class="sub-heading2">Avg. distance</div>
+                <div class="sub-heading">384,400 km</div>
+              </div>
+              <div>
+                <div class="sub-heading2">est. travel time</div>
+                <div class="sub-heading">3 days</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Mars -->
+          <div id="mars-tab" tabindex="0" role="tabpanel" hidden>
+            <h2 class="uppercase fs-800 ff-bellefair">Mars</h2>
+            <div class="body-text">
+              Don’t forget to pack your hiking boots. You’ll need them to tackle
+              Olympus Mons, the tallest planetary mountain in our solar system.
+              It’s two and a half times the size of Everest!
+            </div>
+            <div class="divider-destination"></div>
+            <div class="destination-info">
+              <div>
+                <div class="sub-heading2">Avg. distance</div>
+                <div class="sub-heading">225 MIL. km</div>
+              </div>
+              <div>
+                <div class="sub-heading2">est. travel time</div>
+                <div class="sub-heading">9 months</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Europa -->
+          <div id="europa-tab" tabindex="0" role="tabpanel" hidden>
+            <h2 class="uppercase fs-800 ff-bellefair">Europa</h2>
+            <div class="body-text">
+              The smallest of the four Galilean moons orbiting Jupiter, Europa
+              is a winter lover’s dream. With an icy surface, it’s perfect for a
+              bit of ice skating, curling, hockey, or simple relaxation in your
+              snug wintery cabin.
+            </div>
+            <div class="divider-destination"></div>
+            <div class="destination-info">
+              <div>
+                <div class="sub-heading2">Avg. distance</div>
+                <div class="sub-heading">628 MIL. km</div>
+              </div>
+              <div>
+                <div class="sub-heading2">est. travel time</div>
+                <div class="sub-heading">3 years</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- The titan -->
+          <div id="titan-tab" tabindex="0" role="tabpanel" hidden>
+            <h2 class="uppercase fs-800 ff-bellefair">Titan</h2>
+            <div class="body-text">
+              The only moon known to have a dense atmosphere other than Earth,
+              Titan is a home away from home (just a few hundred degrees
+              colder!). As a bonus, you get striking views of the Rings of
+              Saturn.
+            </div>
+            <div class="divider-destination"></div>
+            <div class="destination-info">
+              <div>
+                <div class="sub-heading2">Avg. distance</div>
+                <div class="sub-heading">1.6 BIL. km</div>
+              </div>
+              <div>
+                <div class="sub-heading2">est. travel time</div>
+                <div class="sub-heading">7 years</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="tabs.js"></script>
+  </body>
+</html>

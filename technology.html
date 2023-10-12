@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Space Tourism</title>
+  </head>
+  <body class="technology" style="visibility: hidden">
+    <header class="primary-header">
+      <div class="flex-container flex">
+        <!-- Logo -->
+        <img src="assets/shared/logo.svg" alt="" class="logo" />
+        <!-- Menu -->
+        <nav>
+          <ul class="underline-indicators">
+            <li class="">
+              <a href="/index.html" class="nav-text"><span>00</span>Home</a>
+            </li>
+            <li>
+              <a href="/destinations.html" class="nav-text"
+                ><span>01</span>Destination</a
+              >
+            </li>
+            <li class="">
+              <a href="/crew.html" class="nav-text"><span>02</span>crew</a>
+            </li>
+            <li class="active">
+              <a href="" class="nav-text"><span>03</span>technology</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Hamburger Icon-->
+        <div class="hamburger-menu" id="open">
+          <img src="assets/shared/icon-hamburger.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <!-- Close Button -->
+        <div class="close-icon" id="close">
+          <img src="assets/shared/icon-close.svg" alt="close-button" />
+        </div>
+        <!-- Nav -->
+        <nav>
+          <ul class="">
+            <li>
+              <a href="" class="nav-text"><span>00</span>Home</a>
+            </li>
+            <li class="active">
+              <a href="" class="nav-text"><span>01</span>Destination</a>
+            </li>
+            <li>
+              <a href="" class="nav-text"><span>02</span>crew</a>
+            </li>
+            <li>
+              <a href="" class="nav-text"><span>03</span>technology</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Grid Container -->
+      <div class="grid-container grid-container--technology">
+        <!-- Title -->
+        <div class="numbered-title"><span>03</span>space launch 101</div>
+        <!-- Image -->
+        <div class="image"></div>
+        <!-- Divider -->
+        <!-- Content -->
+        <div class="technology-content">
+          <div class="flex number-indicators">
+            <div class="active" data-infoTech="launch-info">1</div>
+            <div data-infoTech="spaceport-info">2</div>
+            <div data-infoTech="capsule-info">3</div>
+          </div>
+
+          <!-- Launch Info -->
+          <div id="launch-info" class="info">
+            <div class="uppercase ff-barlow-cond text-light">
+              the terminology
+            </div>
+            <h2 class="uppercase ff-bellefair fs-700">Launch Vehicle</h2>
+            <div class="body-text">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </div>
+          </div>
+
+          <!-- Spaceport -->
+          <div id="spaceport-info" class="info" hidden>
+            <div class="uppercase ff-barlow-cond text-light">
+              the terminology
+            </div>
+            <h2 class="uppercase ff-bellefair fs-700">spaceport</h2>
+            <div class="body-text">
+              A spaceport or cosmodrome is a site for launching (or receiving)
+              spacecraft, by analogy to the seaport for ships or airport for
+              aircraft. Based in the famous Cape Canaveral, our spaceport is
+              ideally situated to take advantage of the Earth’s rotation for
+              launch.
+            </div>
+          </div>
+
+          <!-- Space Capsule -->
+          <div id="capsule-info" class="info" hidden>
+            <div class="uppercase ff-barlow-cond text-light">
+              the terminology
+            </div>
+            <h2 class="uppercase ff-bellefair fs-700">space capsule</h2>
+            <div class="body-text">
+              A space capsule is an often-crewed spacecraft that uses a
+              blunt-body reentry capsule to reenter the Earth's atmosphere
+              without wings. Our capsule is where you'll spend your time during
+              the flight. It includes a space gym, cinema, and plenty of other
+              activities to keep you entertained.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="numbers.js"></script>
+  </body>
+</html>

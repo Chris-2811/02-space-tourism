@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Space Tourism</title>
+  </head>
+  <body class="crew" style="visibility: hidden">
+    <header class="primary-header">
+      <div class="flex-container flex">
+        <!-- Logo -->
+        <img src="assets/shared/logo.svg" alt="" class="logo" />
+        <!-- Menu -->
+        <nav>
+          <ul class="underline-indicators">
+            <li class="">
+              <a href="/index.html" class="nav-text"><span>00</span>Home</a>
+            </li>
+            <li>
+              <a href="/destinations.html" class="nav-text"
+                ><span>01</span>Destination</a
+              >
+            </li>
+            <li class="active">
+              <a href="/crew.html" class="nav-text"><span>02</span>crew</a>
+            </li>
+            <li>
+              <a href="/technology.html" class="nav-text"
+                ><span>03</span>technology</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Hamburger Icon-->
+        <div class="hamburger-menu" id="open">
+          <img src="assets/shared/icon-hamburger.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="mobile-menu">
+        <!-- Close Button -->
+        <div class="close-icon" id="close">
+          <img src="assets/shared/icon-close.svg" alt="close-button" />
+        </div>
+        <!-- Nav -->
+        <nav>
+          <ul class="">
+            <li>
+              <a href="" class="nav-text"><span>00</span>Home</a>
+            </li>
+            <li class="active">
+              <a href="" class="nav-text"><span>01</span>Destination</a>
+            </li>
+            <li>
+              <a href="" class="nav-text"><span>02</span>crew</a>
+            </li>
+            <li>
+              <a href="" class="nav-text"><span>03</span>technology</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Grid Container -->
+      <div class="grid-container grid-container--crew">
+        <!-- Title -->
+        <div class="numbered-title"><span>02</span>Meet your crew</div>
+        <!-- Image -->
+        <img
+          src="assets/crew/image-douglas-hurley.png"
+          alt="douglas"
+          id="commander"
+        />
+        <img
+          src="assets/crew/image-mark-shuttleworth.png"
+          alt="douglas"
+          hidden
+          id="specialist"
+        />
+        <img
+          src="assets/crew/image-victor-glover.png"
+          alt="douglas"
+          hidden
+          id="pilot"
+        />
+        <img
+          src="assets/crew/image-anousheh-ansari.png"
+          alt="douglas"
+          hidden
+          id="engineer"
+        />
+        <!-- Divider -->
+        <div class="divider-crew"></div>
+        <!-- Content Commander-->
+        <div class="crew-content flex">
+          <div class="dots flex dot-indicators">
+            <div
+              class="active"
+              data-info="commander-info"
+              data-image="commander"
+            ></div>
+            <div data-info="specialist-info" data-image="specialist"></div>
+            <div data-info="pilot-info" data-image="pilot"></div>
+            <div data-info="engineer-info" data-image="engineer"></div>
+          </div>
+          <!-- Commander info -->
+          <div id="commander-info" class="info">
+            <div class="uppercase ff-bellefair role">Commander</div>
+            <h2 class="uppercase ff-bellefair fs-700">Douglas Hurley</h2>
+            <div class="body-text">
+              Let’s face it; if you want to go to space, you might as well
+              genuinely go to outer space and not hover kind of on the edge of
+              it. Well sit back, and relax because we’ll give you a truly out of
+              this world experience!
+            </div>
+          </div>
+          <!-- Mission specialist info -->
+          <div id="specialist-info" class="info" hidden>
+            <div class="uppercase ff-bellefair role">Mission Specialist</div>
+            <h2 class="uppercase ff-bellefair fs-700">Mark Shuttleworth</h2>
+            <div class="body-text">
+              Mark Richard Shuttleworth is the founder and CEO of Canonical, the
+              company behind the Linux-based Ubuntu operating system.
+              Shuttleworth became the first South African to travel to space as
+              a space tourist.
+            </div>
+          </div>
+
+          <!-- Pilot info -->
+          <div id="pilot-info" class="info" hidden>
+            <div class="uppercase ff-bellefair role">pilot</div>
+            <h2 class="uppercase ff-bellefair fs-700">victor glover</h2>
+            <div class="body-text">
+              Pilot on the first operational flight of the SpaceX Crew Dragon to
+              the International Space Station. Glover is a commander in the U.S.
+              Navy where he pilots an F/A-18.He was a crew member of Expedition
+              64, and served as a station systems flight engineer.
+            </div>
+          </div>
+
+          <!-- Engineer info -->
+          <div id="engineer-info" class="info" hidden>
+            <div class="uppercase ff-bellefair role">flight engineer</div>
+            <h2 class="uppercase ff-bellefair fs-700">anousheh ansari</h2>
+            <div class="body-text">
+              Anousheh Ansari is an Iranian American engineer and co-founder of
+              Prodea Systems. Ansari was the fourth self-funded space tourist,
+              the first self-funded woman to fly to the ISS, and the first
+              Iranian in space.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="dots.js"></script>
+  </body>
+</html>
